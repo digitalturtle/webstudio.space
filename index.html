@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Главная страница">
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+        <title>Web studio "The Space"</title>
+        <link rel="shortcut icon" href="img/logo_maket.png" type="image/png">
+        
+        <style>
+          @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Rubik+Mono+One&display=swap');
+          @import url('https://fonts.googleapis.com/css2?family=Cuprum&display=swap');
+        </style>
+
+        <link href="css/main.css" rel="stylesheet" type="text/css">
+        <script src="https://kit.fontawesome.com/791fa29602.js" crossorigin="anonymous"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-9K8S9H5KB1"></script>
+	<script>
+  		window.dataLayer = window.dataLayer || [];
+  		function gtag(){dataLayer.push(arguments);}
+  		gtag('js', new Date());
+
+  		gtag('config', 'G-9K8S9H5KB1');
+	</script>
+         
+    </head>
+    <body>
+      
+        <!-- Navbar -->
+        <div class="container" id="topheader" >
+          <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+            <button class="navbar-toggler navbar-toggler-right btn_nav" type="button" data-toggle="collapse" 
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="https://webstudio.space/">
+              <img src="img/logo_maket.png" alt="Logo" style="width:50px;">The Space
+            </a>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+              <ul class="navbar-nav ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#home">HOME<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#our_services">SERVICE</a>
+                </li><li class="nav-item">
+                  <a class="nav-link" href="#about_us">ABOUT US</a>
+                </li><li class="nav-item">
+                  <a class="nav-link" href="#pricing_table">PRICING <wbr>TABLE</a>
+                </li><li class="nav-item">
+                  <a class="nav-link" href="#how_it_works">HOW IT <wbr>WORKS</a>
+                </li><li class="nav-item">
+                  <a class="nav-link " href="#happy_clients">HAPPY <wbr>CLIENTS</a>
+                </li><li class="nav-item">
+                  <a class="nav-link" href="#contact_us">CONTACT US</a>
+                </li>
+              </ul>
+
+            </div>
+          </nav>
+        </div>
+        <!-- Home page -->
+        <div class="container-fluid reg_container">
+          <div class="container">
+            <div class="row  text-end">
+              <div class="col-12 region">
+                <div class="form-check form-switch">
+                  <input class="form-check-input" onclick="change_Reg_ru()" type="checkbox" id="flexSwitchCheckDefault">
+                  <label class="form-check-label" for="flexSwitchCheckDefault">ENG</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- BANNER 
+          <div class="row  text-center">
+            <div class="col-12 banner">
+              <b>!!! WE HAVE OPENED !!!</b>
+            </div>
+          </div>
+          <div class="row  banner text-center">
+            <div class="container">
+              <div class="col-12">
+                <div class=" rope_banner">
+                  <img src="img/rope_banner.png" class="img_rope" alt="rope_banner">
+                </div>
+              </div>     
+            </div>
+          </div> -->
+
+          <div class="row line_1 text-center">
+            <div class="col">
+              <h1>BOOST YOUR BUSSINES WITH YOUR OWN WEBSITE</h1></br><p class="pricing_table_p">Welcome to contact us to build your website and improve your business.</p>
+            </div>
+          </div>
+          <div class="row line_2 text-center">
+            <div class="container">
+              <div class="row justify-content-center"> 
+                <form onsubmit="send(event, 'send11_05_22.php')" class="row" method="post" id="form">
+                  <div class="col form-group">
+                    <label class="font-aws">
+                      <i class="fa-solid fa-user  icon_name" ></i>
+                      <input class="form_1" type="text" name="name" placeholder="Full Name" minlength="2" maxlength="30" required="required" >
+                    </label>
+                  </div>
+                  <div class="col form-group">
+                    <label class="font-aws">
+                      <i class="fa-solid fa-envelope icon_envelope"></i>
+                      <input class="form_2" type="email" name="email" placeholder="Email adress" required="required">
+                    </label>
+                  </div>
+                  <div class="col form-group">
+                    <label class="font-aws">
+                      <i class="fa-solid fa-phone icon_phone"></i>
+                      <input class="form_3" type="tel" name="phone" placeholder="Phone Number" required="required">
+                    </label>  
+                  </div>
+                  <div class="col">
+                    <button class="button_1 btn_hover" type="submit">SEND A REQUEST</button>
+                  </div>
+                </form>  
+              </div>
+            </div> 
+          </div>
+        </div>
+
+        <!-- Home & slider -->
+
+        <div class="container">
+          <div class="row line_3 text-center justify-content-center">
+            <div class="col my_slider_wrap">
+              <div id="carouselExampleIndicators" class="carousel slide my_slider top-cover center-block" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="img/slide_1-min.png" alt="First slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="img/slide_2-min.png" alt="Second slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="img/slide_3-min.png" alt="Third slide">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+         <!-- Our service-->
+
+        <div class="container our_services" id="our_services">
+          <div class="row line_4 text-center">
+            <div class="col">
+              <h2><b>OUR SERVICES</b></h2></br><p class="our_services_p">Order the service and you will receive your wonderful project.</p>
+            </div>
+          </div>
+          <div class="row services_row">
+            <div class="col-6">
+              <div class="row">
+                <div class="col-2 icon_col_1"></div>
+                <div class="col-10 services_col">
+                    <h4>INDIVIDUAL DESIGN</h4></br><p>The developed design will be unique, consistent with the corporate 
+                      identity and customer requirements.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="row">
+                <div class="col-2 icon_col_2"></div>
+                <div class="col-10 services_col">
+                  <h4>ADAPTIVE LAYOUT</h4></br><p>The site will be adaptive to any screens of computers and smartphones. 
+                    Also, the size of the site will be adaptive to save mobile traffic.</p>
+                </div>
+            </div>
+            </div>    
+          </div>
+          <div class="row services_row">
+            <div class="col-6">
+              <div class="row">
+                <div class="col-2 icon_col_3"></div>
+                <div class="col-10 services_col">
+                  <h4>CROSSBROWSER COMPATIBILITY</h4></br><p>In today's world, there are different browsers. They can interact 
+                    with the site in different ways. Cross-browser compatibility solves this problem.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="row">    
+                <div class="col-2 icon_col_4"></div>
+                <div class="col-10 services_col">
+                  <h4>FUNCTIO<wbr>NALITY</h4></br><p>The site contains a complete set of functions for interacting with the visitor, 
+                    performing the necessary actions and feedback.</p>
+                </div>
+              </div>
+            </div>    
+          </div>
+          <div class="row services_row">
+            <div class="col-6">
+              <div class="row">
+                <div class="col-2 icon_col_5"></div>
+                <div class="col-10 services_col">
+                  <h4>SECURITY STANDARDS</h4></br><p>The site creation service includes ensuring data protection and advising 
+                    clients on security issues.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="row">    
+                <div class="col-2 icon_col_6"></div>
+                <div class="col-10 services_col">
+                  <h4>NICE PRICES AND SUPPORT</h4></br><p>Our prices are fully consistent with the realities in which we work 
+                    and will pleasantly surprise you, as well as website support after the transfer of the project.</p>
+                </div>
+                <a name="about_us"></a>
+              </div>
+            </div>    
+          </div>
+          
+        </div>
+
+        <!--About us -->
+        <div class="container-fluid" >
+          <div class="row about_us">
+            <div class="container">
+            <div class="row line_5 justify-content-end">
+              <div class="col workplace">
+                <img src="img/workplace-min.png" class="workplace" alt="workplace">
+              </div>
+              <div class="col about_us_text">
+                <h2><b>ABOUT US</b></h2></br><p>We are a young company in the information technology market, we offer you our services for 
+                  the development of websites and web applications. Web Studio "The Space" will embody your idea of a website or help you choose a project and 
+                  design for your business. Our policy is an individual attitude towards each client, it is an honest fulfillment of our duties and agreements, 
+                  it is the support of our clients after the development is completed. If you are interested in our offer, just contact us via the feedback form, 
+                  by phone or by e-mail. Sincerely, web studio "The Space".</p></br>
+                  <button class="read_more_button btn_hover">READ MORE</button>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Pricing table -->
+        <div class="container-fluid" id="pricing_table">
+          <div class="row pricing_table">
+              <div class="container">
+                <div class="row line_6 text-center">
+                  <div class="col">
+                    <h2><b>CHOOSE YOUR PRICE</b></h2></br><p class="pricing_table_p">Choose the option that suits you.</p>
+                  </div>
+                </div>
+                <div class="row line_7 text-center">
+                  <div class="col-4 pricing_col_1">
+                    <div class="row justify-content-center pricing_col_row_1">WEBSITE BUSINESS CARD</div>
+                    <div class="row justify-content-center pricing_col_row_2"><p>from <span class="breake"></br></span><b> 250<span style="font-size: 20px;">$</span></b></p></br><p class="price_p">FOR THE SERVICE</p></div>
+                    <div class="row justify-content-center pricing_col_row_3">SINGLE PAGE SITE</div>
+                    <div class="row justify-content-center pricing_col_row_4">1 MONTH SUPPORT</div>
+                    <div class="row justify-content-center pricing_col_row_5">SSL CERTIFICATE</div>
+                    <div class="row justify-content-center pricing_col_row_6">
+                      <div class="col">
+                        <button type="button" id="button_1" class="get_started_btn btn_hover" data-toggle="modal" data-target="#priceModal" >GET STARTED</button>
+                      </div>
+                      
+                    </div>
+                  </div>
+                  <div class="col-4 pricing_col_2">
+                    <div class="row justify-content-center pricing_col_2_row_1">PROMO SITE</div>
+                    <div class="row justify-content-center pricing_col_2_row_2"><p>from <span class="breake"></br></span><b> 500<span style="font-size: 20px;">$</span></b></p></br><p class="price_p_2">FOR THE SERVICE</p></div>
+                    <div class="row justify-content-center pricing_col_2_row_3">SELLING SITE</div>
+                    <div class="row justify-content-center pricing_col_2_row_4">3 MONTH SUPPORT</div>
+                    <div class="row justify-content-center pricing_col_2_row_5">SSL CERTIFICATE</div>
+                    <div class="row justify-content-center pricing_col_2_row_6">
+                      <div class="col">
+                        <button type="button" id="button_2" class="get_started_btn btn_hover" data-toggle="modal" data-target="#priceModal">GET STARTED</button>
+                      </div>
+                      
+                    </div>
+                  </div>
+                  <div class="col-4 pricing_col_3">
+                    <div class="row justify-content-center pricing_col_row_1">INTERNET CATALOG</div>
+                    <div class="row justify-content-center pricing_col_row_2"><p>from <span class="breake"></br></span><b> 1000<span style="font-size: 20px;">$</span></b></p></br><p class="price_p">FOR THE SERVICE</p></div>
+                    <div class="row justify-content-center pricing_col_row_3">MULTI PAGE SITE</div>
+                    <div class="row justify-content-center pricing_col_3_row_4">6 MONTH SUPPORT</div>
+                    <div class="row justify-content-center pricing_col_row_5">UP TO 500 ITEMS</div>
+                    <div class="row justify-content-center pricing_col_row_6">
+                      <div class="col">
+                        <button type="button" id="button_3" class="get_started_btn btn_hover" data-toggle="modal" data-target="#priceModal">GET STARTED</button>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="priceModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="priceModalLabel">#</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body justify-content-center">
+                        <!-- Сообщение пользователя -->
+                        <div class="form-group">
+                          <p id="message_price"></p>
+                          <div class="price_form">
+                            <!-- Форма обратной связи -->
+                            <form id="feedbackForm" onsubmit="send(event, 'send11_05_22.php')" enctype="multipart/form-data">
+                              <div class="form-row">
+                                <div class="col-12">
+                                  <!-- Имя пользователя -->
+                                  <div class="form-group">
+                                    <label for="name" class="control-label">Name</label>
+                                    <input id="name" type="text" name="name" class="form-control" value="" placeholder="Your name" minlength="2" maxlength="30" required="required">
+                                    <div class="invalid-feedback"></div>
+                                  </div>
+                                </div>
+                                <div class="col-12">
+                                  <!-- Email пользователя -->
+                                  <div class="form-group">
+                                    <label for="email" class="control-label">Email adress</label>
+                                    <input id="email" type="email" name="email" required="required" class="form-control" value="" placeholder="Email-adress">
+                                    <div class="invalid-feedback"></div>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Сообщение пользователя -->
+                              <div class="form-group">
+                                <label for="message" class="control-label">Message</label>
+                                <textarea id="message" name="message" class="form-control" rows="3" placeholder="Describe your project" maxlength="500" required="required"></textarea>
+                                <div class="invalid-feedback"></div>
+                              </div>
+                              <!-- Индикация загрузки данных формы на сервер -->
+                              <div class="progress mb-2 d-none">
+                                <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0">
+                                  <span class="sr-only">0%</span>
+                                </div>
+                              </div>
+                              <!-- Кнопка для отправки формы -->
+                              <button type="submit" class="btn btn-primary float-right send_message">Send message</button>
+                            </form>  
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer" id="btn_footer">
+                        <button class="get_start_now_btn send_message btn btn-primary" type="button" id="btn_get_start">GET STARTED</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <a name="how_it_works"></a>
+        </div>
+
+        <!--How it works -->
+        
+        <div class="container how_it_works" >
+          <div class="row line_8 text-center">
+            <div class="col">
+              <h2><b>HOW IT WORKS</b></h2></br><p class="pricing_table_p">A few simple steps from an idea to the implementation of your product.</p>
+            </div>
+          </div>
+          <div class="row line_9 text-center">
+            <div class="col">
+              <picture>
+                <source srcset="img/arrow_1_min.png" media="(max-width: 768px)">
+                <img src="img/arrow_1.png" class="arrow_1" alt="arrows">
+              </picture>  
+            </div>
+            <div class="col">
+              <picture>
+                <source srcset="img/arrow_3_min.png" media="(max-width: 768px)">
+                <img src="img/arrow_3.png" class="arrow_3" alt="arrows">
+              </picture>
+            </div>
+          </div>
+          <div class="row line_10 text-center">
+            <div class="col-3">
+              <div class="row">
+                <img src="img/step_1_img.png" class="step_1_img" alt="step_1">
+              </div>
+              <div>
+                <h3>STEP 1</h3></br><p>If you are interested in our offer, just contact us via the feedback form, 
+                  by phone or by e-mail.</p>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="row">
+                <img src="img/step_2_img.png" class="step_2_img" alt="step_2">
+              </div>
+              <div>
+                <h3>STEP 2</h3></br><p>We will send you the terms of reference - a document where, having answered our questions, we
+                  we will offer you the best options
+                  and deadlines.</p>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="row">
+                <img src="img/step_3_img.png" class="step_3_img" alt="step_3">
+              </div>
+              <div>
+                <h3>STEP 3</h3></br><p>Having decided on the design and functionality of the product, we sign an agreement and 
+                  start developing the product.</p>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="row">
+                <img src="img/step_4_img.png" class="step_4_img" alt="step_4">
+              </div>
+              <div>
+                <h3>STEP 4</h3></br><p>We present you your site online. We provide you with all the necessary documen<wbr>tation and 
+                  keys (pass<wbr>words).
+                  We stay in touch for support.</p>
+              </div>
+            </div>
+          </div>
+          <div class="row line_11 text-center">
+            <div class="col">
+              <picture>
+                <source srcset="img/arrow_2_min.png" media="(max-width: 768px)">
+                <img src="img/arrow_2.png" class="arrow_2" alt="arrows">
+              </picture>
+            </div>
+          </div>
+          <div class="row line_12 text-center">
+            <div class="col">
+              <button class="get_start_now_btn btn_hover" type="button" class="btn btn-primary" data-toggle="modal" data-target="#feedbackFormModal">GET START NOW</button>
+            </div>
+            
+            <!-- Форма обратной связи в модальном окне -->
+            <div class="modal" id="feedbackFormModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="myModalLabel">Send us a message</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">×</span>
+                    </button>
+                  </div>
+                  <div class="modal-body justify-content-center">
+
+                    <!-- Форма обратной связи -->
+                    <form id="feedbackForm" onsubmit="send(event, 'send11_05_22.php')" enctype="multipart/form-data">
+                      <div class="form-row">
+                        <div class="col-12">
+                          <!-- Имя пользователя -->
+                          <div class="form-group">
+                            <label for="name" class="control-label">Your Name</label>
+                            <input id="name" type="text" name="name" class="form-control" value="" placeholder="Name" minlength="2" maxlength="30" required="required">
+                            <div class="invalid-feedback"></div>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <!-- Email пользователя -->
+                          <div class="form-group">
+                            <label for="email" class="control-label">Your email</label>
+                            <input id="email" type="email" name="email" required="required" class="form-control" value="" placeholder="Email">
+                            <div class="invalid-feedback"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Сообщение пользователя -->
+                      <div class="form-group">
+                        <label for="message" class="control-label">Message</label>
+                        <textarea id="message" name="message" class="form-control" rows="3" placeholder="Describe your project" maxlength="500" required="required"></textarea>
+                        <div class="invalid-feedback"></div>
+                      </div>
+
+                      <!-- Изображения 
+                      <div class="form-group attachments">
+                        <div>При необходимости прикрепите к сообщению изображения (до <span class="countFiles"></span>):
+                        </div>
+                        <div class="mb-1 text-muted">
+                          <small>максимальный размер одного изобржения 512 Кбайт</small>
+                        </div>
+                        <div class="alert alert-warning d-none mb1"><small class="attachments-error"></small></div>
+                          <div class="custom-file">
+                            <input type="file" name="attachment[]" class="custom-file-input" id="customFile1">
+                            <label class="custom-file-label" for="customFile1">Выбреите файл...</label>
+                            <div class="invalid-feedback"></div>
+                          </div>
+                      </div>  -->
+                      <!-- Капча 
+                      <div class="form-group captcha">
+                        <img class="img-captcha" src="/feedback/captcha/captcha.php" data-src="/feedback/captcha/captcha.php">
+                        <div class="btn btn-light refresh-captcha">Обновить</div>
+                        <div class="form-group">
+                          <label for="captcha" class="control-label">Код, показанный на изображении</label>
+                          <input type="text" name="captcha" maxlength="6" required="required" id="captcha" class="form-control captcha" placeholder="******" autocomplete="off" value="">
+                          <div class="invalid-feedback"></div>
+                        </div>
+                      </div>  -->
+                      <!-- Пользовательское солашение 
+                      <div class="form-group">
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" name="agree" class="custom-control-input" id="customCheck">
+                          <label class="custom-control-label" for="customCheck">Нажимая кнопку, я принимаю условия <a href="#">Пользовательского соглашения</a> и даю своё согласие на обработку моих персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных».</label>
+                        </div>
+                      </div> -->
+                      <!-- Сообщение -->
+                      <div class="alert alert-danger form-error d-none">
+                        Произошли ошибки! Исправьте их и отправьте форму ещё раз.
+                      </div>
+                      <!-- Индикация загрузки данных формы на сервер -->
+                      <div class="progress mb-2 d-none">
+                        <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0">
+                          <span class="sr-only">0%</span>
+                        </div>
+                      </div>
+                      <!-- Кнопка для отправки формы -->
+                      <button type="submit" class="btn btn-primary float-center send_message">Send message</button>
+                    </form>  
+                            
+                    <!-- Сообщение об успешной отправки формы -->
+                    <div class="alert alert-success form-success mb-0 d-none">Форма успешно отправлена. Нажмите на <a class="form-success-link" href="#">ссылку</a>, чтобы отправить ещё одно сообщение.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Happy clients -->
+        
+        <div class="container-fluid" id="happy_clients">
+          <div class="row happy_clients">
+            <div class="container">
+              <div class="row line_13 text-center">
+                <div class="col">
+                  <h2><b>HAPPY CLIENTS</b></h2></br><p class="happy_clients_p">What do clients say about us?</p>
+                </div>
+              </div>
+              <div class="row line_14">
+                <div class="col clients">
+                  <div>
+                    <img src="img/face_1.png" alt="face_1" class="leftimg">
+                    <p class="happy_clients_text">I am very grateful to the guys from the web studio The Space, for a branded and prestigious site for me. 
+                      Unfortunately, the company approached with attendance, in the end I got what I wanted.</br></br>
+                    <span class="happy_clients_name">ANNA NIKULITSKAYA, </span><span class="happy_clients_position">DIRECTOR OF THE SWEET-SHOP</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="col clients">
+                  <div>
+                    <img src="img/face_2.png" alt="face_2" class="leftimg">
+                    <p class="happy_clients_text">We have very pleasant impressions about cooperation with The Space web studio. Prompt and professional
+                       work for a very modest, from my point of view, fee.</br></br>
+                    <span class="happy_clients_name">VADIM NIKOLAEVICH, </span><span class="happy_clients_position">LAWYER</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="row line_15">
+                <div class="col clients">
+                  <div>
+                    <img src="img/face_3.png" alt="face_3" class="leftimg">
+                    <p class="happy_clients_text">We express our sincere gratitude to The Space web studio for the fruitful cooperation in creating the 
+                      website of our company.</br></br>
+                    <span class="happy_clients_name">MAXIM MOKO, </span><span class="happy_clients_position">DIRECTOR OF CONSTRUCTION COMPANY</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="col clients">
+                  <div>
+                    <img src="img/face_4_2.png" alt="face_4" class="leftimg">
+                    <p class="happy_clients_text">Professionals in their field, treated with under<wbr>standing and took into account every detail when 
+                      creating a site on our subject. Thanks a lot!</br></br>
+                    <span class="happy_clients_name">ALEKSANDR WALTZ, </span><span class="happy_clients_position">DIRECTOR OF A CAR SERVICE</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!--Newsletter and contact us -->
+        
+        <div class="container contact_us" id="contact_us">
+          <div class="row line_16 text-center">
+            <div class="col">
+              <h2><b>NEWSLETTER</b></h2></br><p class="pricing_table_p">We offer you a subscription to news and promotions of our company.</p>
+            </div>
+          </div>
+          <div class="row line_17 text-center justify-content-center">
+            <form onsubmit="send(event, 'send11_05_22.php')" class="row" method="post" id="form">
+              <div class="col">
+                <label class="font-aws">
+                  <i class="fa-solid fa-user  icon_name"></i>
+                  <input class="form_1" type="text" name="name" placeholder="Full Name" minlength="2" maxlength="30" required="required">
+                </label>
+              </div>
+              <div class="col">
+                <label class="font-aws">
+                  <i class="fa-solid fa-envelope icon_envelope"></i>
+                  <input class="form_2" type="email" name="email" placeholder="Email adress" required="required">
+                </label>
+              </div>
+              <div class="col">
+                <button type="submit" class="btn_subscribe_now btn_hover">SUBSCRIBE NOW</button>
+              </div>
+            </form>  
+          </div>
+          <div class="row line_18 text-center">
+            <div class="col map">
+              <div class="row justify-content-center">
+                <div class="adress">
+                  <p>
+                    </br></br>
+                    <b>ADRESS</b></br></br><span class="adress_street">Kaliningrad</br>Leningradsky district</br>May lane 1 236041</br>
+                    <a class="tel" href="tel:+79673517575">Call:+7-967-351-75-75</a></br><a class="adress_email" href="mailto:info@webstudio.space">info@webstudio.space</a>
+                  </p>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <a class="logo_end" href="https://www.webstudio.space/index.html"><img  src="img/logo_maket.png" alt="logo"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Just line and footer-->
+
+        <div class="container-fluid footer">
+          <div class="container just_line">
+            <div class="row line_19 text-center">
+              <div class="col nav_footer nav_footer_col_1">
+                <a href="#topheader">HOME</a>
+              </div>
+              <div class="col nav_footer nav_footer_col_2">
+                <a href="#our_services">SERVICE</a>
+              </div>
+              <div class="col nav_footer nav_footer_col_3">
+                <a href="#about_us">ABOUT US</a>
+              </div>
+              <div class="col nav_footer nav_footer_col_4">
+                <a href="#pricing_table">PRICING TABLE</a>
+              </div>
+              <div class="col nav_footer nav_footer_col_5">
+                <a href="#how_it_works">HOW IT WORK</a>
+              </div>
+              <div class="col nav_footer nav_footer_col_6">
+                <a href="#happy_clients">HAPPY CLIENTS</a>
+              </div>
+              <div class="col nav_footer nav_footer_col_7">
+                <a href="#contact_us">CONTACT US</a>
+              </div>
+            </div>
+            <div class="row line_20 text-center">
+              <div class="col">
+                <a class="tel_footer" href="tel:+79673517575">+7 967 351 75 75</a> 
+              </div>
+            </div>
+            <div class="row line_21 text-center">
+              <div class="col-3">
+                <a href="https://www.twitter.com"><i class="fa-brands fa-twitter fa-2x icon_twitter"></i></a>
+              </div>
+              <div class="col-3">
+                <a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f fa-2x icon_facebook"></i></a>
+              </div>
+              <div class="col-3">
+                <a href="https://www.google.com"><i class="fa-brands fa-google-plus-g fa-2x icon_facebook"></i></a>
+              </div>
+              <div class="col-3">
+                <a href="https://www.linkedin.com/in/aleksandr-gubanov-53a653240/"><i class="fa-brands fa-linkedin-in fa-2x icon_facebook"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="row line_22 text-center">
+            <div class="col">
+              &#169; 2022. The Space webstudio. All rights reserved.
+            </div>
+          </div>
+        </div>
+        
+        <!-- JQuery -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+        
+        <script src="scripts/main.js"></script>
+        
+     
+    </body>
+    
+</html>        
